@@ -8,7 +8,7 @@
 
 <html id = "contact_us">
 	<head>
-		<title>COSERPROSS | Professional Services Cooperative: Seed of Knowledge</title>
+		<title>COSERPROSS | Professional Services Cooperative: Seeds of Wisdom</title>
 		<link rel = "stylesheet" type = "text/css" href = "../css/style.css">
 		<meta name = "home" content = "width = device-width intiial-scale = 1">
 	</head>
@@ -34,7 +34,7 @@
 					</div>
 				</li>
 				<li><a href = "contactanos.php">Contact Us</a></li>
-				<li><a href = "#">Sign In</a></li>
+				<li><a href = "../webmail">Sign In</a></li>
 				<li class = "dropdown" id = "nav-flag">
 					<a href = "javascript:void(0)" class = "dropbtn"><img src = "../media/icons/EN_flag.png" style = "width: 23px;"/></a>
 						<div class = "dropdown-content">
@@ -51,6 +51,7 @@
 			</nav>
 		</header>
 		<section>
+		<!--
 			<div class = "slideshow">
 				<div class = "slideshow-container">
 					<div class = "mySlides fade">
@@ -91,7 +92,7 @@
 					<span class = "dot" onclick = "currentSlide(5)"></span>
 				</div>
 			</div>
-
+		-->
 			<script>
 				var slideIndex = 1;
 				showSlides(slideIndex);
@@ -122,7 +123,7 @@
 			</script>
 
 			<div class = "social_media">
-				<iframe src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fzuck&width=200&height=80&layout=standard&size=small&show_faces=true&appId" width="200" height="120" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCoserpross-362999717457242%2F&tabs&width=340&height=180&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 			</div>
 
 			 <div id="map"></div>
@@ -252,6 +253,8 @@
 		</section>
 	<script src = "../js/jquery-latest.js"></script>
 	<script src = "../js/menu.js"></script>
-
 	</body>
+	<footer class = "footer">
+		Copyright © Inti Mendoza, 2017
+	</footer>
 </html>

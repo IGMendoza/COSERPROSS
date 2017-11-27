@@ -8,7 +8,7 @@
 
 <html id = "contact_us">
 	<head>
-		<title>COSERPROSS | Cooperativa de Servicios Profesionales Simiente de Saber</title>
+		<title>COSERPROSS | Cooperativa de Servicios Profesionales Simiente de Saberes</title>
 		<link rel = "stylesheet" type = "text/css" href = "../css/style.css">
 		<meta name = "home" content = "width = device-width initial-scale = 1">
 		<meta charset = "UTF-8">
@@ -35,7 +35,7 @@
 					</div>
 				</li>
 				<li><a href = "contactanos.php">Contáctanos</a></li>
-				<li><a href = "#">Iniciar Sesión</a></li>
+				<li><a href = "../webmail">Iniciar Sesión</a></li>
 				<li class = "dropdown" id = "nav-flag">
 					<a href = "javascript:void(0)" class = "dropbtn"><img src = "../media/icons/LAN_flag.png" style = "width: 23px;"/></a>
 						<div class = "dropdown-content">
@@ -122,12 +122,12 @@
 					dots[slideIndex-1].className += " active";
 				}
 			</script>
-
+			
 			<div class = "social_media">
-				<iframe src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fzuck&width=200&height=80&layout=standard&size=small&show_faces=true&appId" width="200" height="120" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCoserpross-362999717457242%2F&tabs&width=340&height=180&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 			</div>
 
-			 <div id="map"></div>
+			<div id="map"></div>
 			<script>
 				function initMap() {
 					var uluru = {lat: 13.851, lng: -86.3630};
@@ -221,6 +221,7 @@
 						map: map
 					});
 				}
+			
 			</script>
 			<script async defer
 			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5qm7F_9eZALumEgtaXN8DWhm8kmNKvK4&callback=initMap">
@@ -256,4 +257,7 @@
 	<script src = "../js/menu.js"></script>
 
 	</body>
+	<footer class = "footer">
+		Copyright © Inti Mendoza, 2017
+	</footer>
 </html>
