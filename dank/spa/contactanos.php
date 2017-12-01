@@ -231,7 +231,7 @@
 				<div id = "env_msg_h">
 				Envíanos un mensaje!<br>
 				</div>
-				<form action = "contact-us-send.php" method = "post">
+				<form action = "" method = "post">
 					<ul style="list-style: none" id = "input-form">
 						<li>
 							<label for = "name"><br>Tu Nombre:<br></label>
@@ -261,3 +261,25 @@
 		Copyright © Inti Mendoza, 2017
 	</footer>
 </html>
+
+<?php
+if(isset($_POST['submit'])) {
+	$to 		= "simiente-de-saberes@coserpross.org";
+	$from 		= $_POST['email'];
+	$name 		= $_POST['name'];
+	$subject 	= "Mensaje proveniente de página web!";
+	$subject2	= "Copia del mensaje que enviastes (te responderemos lo más pronto posible!):";
+	$message	= $_POST['message'];
+
+	$headers	= "De: " . $from;
+	$headers2	= "De: " . $to;
+
+	if(mail($to, $subject, $message, $headers)) {
+		echo("<p>Mensaje enviado!</p>");
+	} else {
+		echo("<p>Mensave no ha podido ser enviado!</p>");
+	}
+
+	mail($from, $subject2, $message2, $headers2);
+}
+?>

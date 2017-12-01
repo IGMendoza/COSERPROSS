@@ -229,7 +229,7 @@
 				<div id = "env_msg_h">
 				Send us a message!<br>
 				</div>
-				<form action = "contact-us-send.php" method = "post">
+				<form action = "" method = "post">
 					<ul style="list-style: none" id = "input-form">
 						<li>
 							<label for = "name"><br>Your Name:<br></label>
@@ -258,3 +258,25 @@
 		Copyright © Inti Mendoza, 2017
 	</footer>
 </html>
+
+<?php
+if(isset($_POST['submit'])) {
+	$to 		= "simiente-de-saberes@coserpross.org";
+	$from 		= $_POST['email'];
+	$name 		= $_POST['name'];
+	$subject 	= "Message coming from Webpage!";
+	$subject2	= "Copy of your message (we will get back at you as soon as possible!):";
+	$message	= $_POST['message'];
+
+	$headers	= "From: " . $from;
+	$headers2	= "From: " . $to;
+
+	if(mail($to, $subject, $message, $headers)) {
+		echo("<p>Message sent!</p>");
+	} else {
+		echo("<p>Message could not be sent!</p>");
+	}
+
+	mail($from, $subject2, $message2, $headers2);
+}
+?>
