@@ -56,6 +56,10 @@ body {
 	letter-spacing: 1px;
 }
 
+.footer a {
+	color: LightSkyBlue;
+}
+
 
 /* ============== NAVBAR ============== */
 
@@ -758,3 +762,6 @@ input[type = submit] {
 	font-family: Tahoma, sans-serif;
 }
 
+.enviar_mensaje #mail-gucci {
+	text-align: center;
+}

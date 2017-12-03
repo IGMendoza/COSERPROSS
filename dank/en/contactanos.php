@@ -233,21 +233,22 @@
 					<ul style="list-style: none" id = "input-form">
 						<li>
 							<label for = "name"><br>Your Name:<br></label>
-							<input type = "text" id = "name" name = "name" placeholder = "Name.." />
+							<input type = "text" id = "name" name = "name" placeholder = "Name.."  minlength = "1" oninvalid = "this.setCustomValidity(this.willValidate ? '' : 'Please fill out this field')" required />
 						</li>
 						<li>
 							<label for = "email">Your Email:<br></label>
-							<input type = "text" id = "email" name = "email" placeholder = "Email..">
+							<input type = "text" id = "email" name = "email" placeholder = "Email.." minlength = "1" oninvalid = "this.setCustomValidity(this.willValidate ? '' : 'Please fill out this field')" required />
 						</li>
 						<li>
 							<label for = "message">Your Message:<br></label>
-							<textarea name = "message" id = "message" rows = "5" placeholder = "Message.."></textarea>
+							<textarea name = "message" id = "message" rows = "5" placeholder = "Message.." minlength = "1" oninvalid = "this.setCustomValidity(this.willValidate ? '' : 'Please fill out this field')" required></textarea>
 						</li>
 						<li>
-							<input type = "submit" name = "submit" value = "Send Message"/>
+							<input type = "submit" name = "submit" value = "Send Message" />
 						</li>
 					</ul>
 				</form>
+				
 			</div>
 			<br><br><br><br><br>
 		</section>
@@ -255,28 +256,29 @@
 	<script src = "../js/menu.js"></script>
 	</body>
 	<footer class = "footer">
-		Copyright © Inti Mendoza, 2017
+		Copyright © <a href = "mailto:intigabi13@gmail.com?subject=Regarding%20Coserpross%20Website">Inti Mendoza</a>, 2017
 	</footer>
 </html>
 
 <?php
-if(isset($_POST['submit'])) {
-	$to 		= "simiente-de-saberes@coserpross.org";
-	$from 		= $_POST['email'];
-	$name 		= $_POST['name'];
-	$subject 	= "Message coming from Webpage!";
-	$subject2	= "Copy of your message (we will get back at you as soon as possible!):";
-	$message	= $_POST['message'];
+	$result = "ayy";
+	if(isset($_POST['submit'])) {
+		$to 		= "simiente-de-saberes@coserpross.org";
+		$from 		= $_POST['email'];
+		$name 		= $_POST['name'];
+		$subject 	= "Message coming from Webpage!";
+		$subject2	= "Copy of your message (we will get back at you as soon as possible!):";
+		$message	= $_POST['message'];
 
-	$headers	= "From: " . $from;
-	$headers2	= "From: " . $to;
+		$headers	= "From: " . $from;
+		$headers2	= "From: " . $to;
 
-	if(mail($to, $subject, $message, $headers)) {
-		echo("<p>Message sent!</p>");
-	} else {
-		echo("<p>Message could not be sent!</p>");
+		if(mail($to, $subject, $message, $headers)) {
+			echo "gucci";
+		} else {
+			echo "not gucci";
+		}
+
+		mail($from, $subject2, $message2, $headers2);
 	}
-
-	mail($from, $subject2, $message2, $headers2);
-}
 ?>

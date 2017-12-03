@@ -235,15 +235,15 @@
 					<ul style="list-style: none" id = "input-form">
 						<li>
 							<label for = "name"><br>Tu Nombre:<br></label>
-							<input type = "text" id = "name" name = "name" placeholder = "Nombre.." />
+							<input type = "text" id = "name" name = "name" placeholder = "Nombre.."  minlength = "1" oninvalid = "this.setCustomValidity(this.willValidate ? '' : 'Por favor llene este campo.')" required />
 						</li>
 						<li>
 							<label for = "email">Tu Email:<br></label>
-							<input type = "text" id = "email" name = "email" placeholder = "Email..">
+							<input type = "text" id = "email" name = "email" placeholder = "Email.." minlength = "1" oninvalid = "this.setCustomValidity(this.willValidate ? '' : 'Por favor llene este campo.')" required />
 						</li>
 						<li>
 							<label for = "message">Tu Mensaje:<br></label>
-							<textarea name = "message" id = "message" rows = "5" placeholder = "Mensaje.."></textarea>
+							<textarea name = "message" id = "message" rows = "5" placeholder = "Mensaje.." minlength = "1" oninvalid = "this.setCustomValidity(this.willValidate ? '' : 'Por favor llene este campo.')" required></textarea>
 						</li>
 						<li>
 							<input type = "submit" name = "submit" value = "Enviar Mensaje"/>
@@ -258,28 +258,28 @@
 
 	</body>
 	<footer class = "footer">
-		Copyright © Inti Mendoza, 2017
+		Copyright © <a href = "mailto:intigabi13@gmail.com?subject=Regarding%20Coserpross%20Website">Inti Mendoza</a>, 2017
 	</footer>
 </html>
 
 <?php
-if(isset($_POST['submit'])) {
-	$to 		= "simiente-de-saberes@coserpross.org";
-	$from 		= $_POST['email'];
-	$name 		= $_POST['name'];
-	$subject 	= "Mensaje proveniente de página web!";
-	$subject2	= "Copia del mensaje que enviastes (te responderemos lo más pronto posible!):";
-	$message	= $_POST['message'];
+	if(isset($_POST['submit'])) {
+		$to 		= "simiente-de-saberes@coserpross.org";
+		$from 		= $_POST['email'];
+		$name 		= $_POST['name'];
+		$subject 	= "Mensaje proveniente de página web!";
+		$subject2	= "Copia del mensaje que enviastes (te responderemos lo más pronto posible!):";
+		$message	= $_POST['message'];
 
-	$headers	= "De: " . $from;
-	$headers2	= "De: " . $to;
+		$headers	= "From: " . $from;
+		$headers2	= "From: " . $to;
 
-	if(mail($to, $subject, $message, $headers)) {
-		echo("<p>Mensaje enviado!</p>");
-	} else {
-		echo("<p>Mensave no ha podido ser enviado!</p>");
+		if(mail($to, $subject, $message, $headers)) {
+			echo "gucci";
+		} else {
+			echo "not gucci";
+		}
+
+		mail($from, $subject2, $message2, $headers2);
 	}
-
-	mail($from, $subject2, $message2, $headers2);
-}
 ?>
