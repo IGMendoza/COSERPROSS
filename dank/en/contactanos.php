@@ -28,9 +28,9 @@
 				<li class = "dropdown">
 					<a href = "cooperativas.html" class = "dropbtn">Cooperatives</a>
 					<div class = "dropdown-content">
-						<a href = "#">Cooperative 1</a>
-						<a href = "#">Cooperative 2</a>
-						<a href = "#">Cooperative 3</a>
+						<a href = "./cooperativas/bosawas.html">Bosawas</a>
+						<a href = "./cooperativas/garbo.html">GARBO</a>
+						<a href = "./cooperativas/reynerios_tijerino.html">Reynerios Tijerino</a>
 					</div>
 				</li>
 				<li><a href = "contactanos.php">Contact Us</a></li>

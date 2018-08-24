@@ -29,9 +29,9 @@
 				<li class = "dropdown">
 					<a href = "cooperativas.html" class = "dropbtn">Cooperativas</a>
 					<div class = "dropdown-content">
-						<a href = "#">Cooperativa 1</a>
-						<a href = "#">Cooperativa 2</a>
-						<a href = "#">Cooperativa 3</a>
+						<a href = "./cooperativas/bosawas.html">Bosawas</a>
+						<a href = "./cooperativas/garbo.html">GARBO</a>
+						<a href = "./cooperativas/reynerios_tijerino.html">Reynerios Tijerino</a>
 					</div>
 				</li>
 				<li><a href = "contactanos.php">Contáctanos</a></li>
@@ -251,7 +251,7 @@
 					</ul>
 				</form>
 			</div>
-			<br><br><br><br><br>
+			<br> <br> <br> <!-- Create space b/w end and footer -->
 		</section>
 	<script src = "../js/jquery-latest.js"></script>
 	<script src = "../js/menu.js"></script>

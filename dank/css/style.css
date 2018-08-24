@@ -40,6 +40,18 @@ body {
 	min-height: 100vh;
 }
 
+#cooperativas body {
+	background: url(../media/backgrounds/broken_farm.jpg) no-repeat center center fixed;
+	background-size: cover;
+	min-height: 100vh;
+}
+
+#cooperativas_indv body {
+	background: url(../media/backgrounds/broken_farm.jpg) no-repeat center center fixed;
+	background-size: cover;
+	min-height: 100vh;
+}
+
 /* ============== FOOTER ============== */
 
 .footer {
@@ -313,7 +325,7 @@ header nav ul .dropdown:hover .dropdown-content {
 
 /* ============== NOSOTROS ============== */
 
-.text {
+#us .text {
 
 	margin-left: 10%;
 	margin-right: 25%;
@@ -323,45 +335,45 @@ header nav ul .dropdown:hover .dropdown-content {
 	max-width: 1200px;
 }
 
-.text .nosotros {
+#us .text .nosotros {
 	font-family: Tahoma, sans-serif;
 	background: rgba(255, 255, 255, 0.7);
 }
 
-.text .nosotros .text_h_nosotros {
+#us .text .nosotros .text_h_nosotros {
 	font-weight: bold;
 	font-size: 25px;
 	margin: 10px;
 	color: brown;
 }
 
-.text .nosotros .text_nosotros {
+#us .text .nosotros .text_nosotros {
 	text-align: justify;
 	text-justify: inter-word;
 	margin: 10px;
 	color: blue;
 }
 
-.text .miembros {
+#us .text .miembros {
 	font-family: Tahoma, sans-serif;
 	background: rgba(255, 255, 255, 0.7);
 	padding-left: 10px;
 	padding-bottom: 10px;
 }
 
-.text .miembros .text_h_miembros {
+#us .text .miembros .text_h_miembros {
 	font-size: 25px;
 	margin: 10px;
 	color: brown;
 }
 
-.text .miembros .member_href {
+#us .text .miembros .member_href {
 	width: 110px;
 	display: inline-block;
 	vertical-align: top;
 }
 
-.text .miembros .member_href a {
+#us .text .miembros .member_href a {
 	text-decoration: none;
 	color: blue;
 }
@@ -385,7 +397,7 @@ header nav ul .dropdown:hover .dropdown-content {
 	display: block;
 	background: rgba(255, 255, 255, 0.7);
 	padding-left: 5px;
-
+	padding-bottom: 10px;
 }
 
 #member #contact_info p1{
@@ -498,6 +510,7 @@ header nav ul .dropdown:hover .dropdown-content {
 	font-weight: bold;
 	font-style: italic;
 	font-size: 40px;
+	color: brown;
 }
 
 #blog #blog_content {
@@ -580,6 +593,7 @@ header nav ul .dropdown:hover .dropdown-content {
 #blog #table #table_t #right_cell {
 	width: 100px;
 }
+
 #blog #table #table_t #right_cell a{
 	text-decoration: none;
 	color: brown;
@@ -632,6 +646,211 @@ header nav ul .dropdown:hover .dropdown-content {
 	#blog #blog_content .picture {
 		margin-top: 20px;
 	}
+}
+/* ============ COOPERATIVAS ============= */
+
+#cooperativas .text {
+	margin-left: 10%;
+	margin-right: 25%;
+	margin-top: 100px;
+	position: absolute;
+	z-index: 1;
+	max-width: 1200px;
+	font-family: Tahoma, sans-serif;
+	background: rgba(255, 255, 255, 0.7);
+}
+
+#cooperativas .text .title {
+	color: brown;
+	font-size: 150%;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#cooperativas .text .about {
+	color: blue;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	text-align: justify;
+
+}
+
+#cooperativas .text .about a {
+	color: brown;
+}
+
+#cooperativas .text #table #table_h h3 {
+	color: brown;
+}
+
+#cooperativas .text #table #table_t {
+	border-collapse: collapse;
+	width: 100%;
+	max-width: 1180px;
+}
+
+#cooperativas .text #table #table_t #top_cell {
+	border-top: 1px solid brown;
+}
+
+#cooperativas .text #table #table_t #left_cell {
+	width: 50px;
+}
+
+#cooperativas .text #table #table_t #right_cell {
+	width: 100% - 50px;
+	text-align: left;
+	padding-left: 10px;
+}
+
+#cooperativas .text #table #table_t #right_cell a {
+	text-decoration: none;
+	color: black;
+}
+
+#cooperativas .text #table #table_t th {
+	border-bottom: 1px solid brown;
+	padding-left: 10px
+}
+
+#cooperativas .text #table #table_t tr:hover {
+	background-color: #f5f5f5;
+}
+
+/* ========== COOPERATIVAS INDV =========== */
+
+#cooperativas_indv .text {
+	margin-left: 10%;
+	margin-right: 25%;
+	margin-top: 100px;
+	position: absolute;
+	z-index: 1;
+	max-width: 1200px;
+	font-family: Tahoma, sans-serif;
+	background: rgba(255, 255, 255, 0.7);
+}
+
+#cooperativas_indv .text .title {
+	color: brown;
+	font-size: 150%;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#cooperativas_indv .text h3 {
+	color: brown;
+}
+
+#cooperativas_indv .text .basic_info #table_picture {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#cooperativas_indv .text .basic_info #table_basic_info {
+	text-align: left;
+}
+
+#cooperativas_indv .text .basic_info #table_basic_info th {
+	vertical-align: top;
+	border-bottom: brown 1px solid;
+	color: blue;
+}
+
+#cooperativas_indv .text .basic_info #table_basic_info .left {
+	min-width: 150px;
+	border-right: brown 1px solid;
+	text-align: justify;
+	-webkit-hypens:auto;
+		-moz-hyphens: auto;
+	hyphens: auto;
+}
+
+#cooperativas_indv .text .basic_info #table_basic_info th {
+	font-weight: normal;
+}
+
+#cooperativas_indv .text .basic_info #table_basic_info .left {
+	font-weight: bold;
+}
+
+#cooperativas_indv .text .basic_info, #cooperativas_indv .text .about_us,
+#cooperativas_indv .text .services, #cooperativas_indv .text .coop_organs,
+#cooperativas_indv .text .contact, #cooperativas_indv .text .cuadernos {
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: justify;
+	-webkit-hypens:auto;
+		-moz-hyphens: auto;
+	hyphens: auto;
+	color: blue;
+}
+
+#cooperativas_indv .text .table_top_imp {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#cooperativas_indv .text .table_top_imp th {
+	color: blue;
+	text-align: left;
+	padding-right: 20px;
+	font-weight: normal;
+	border-right: brown 1px solid;
+}
+
+#cooperativas_indv .text .table_top_imp .top th{
+	font-weight: bold;
+	border-bottom: brown 1px solid;
+}
+
+#cooperativas_indv .text .table_top_imp .left {
+	border-left: brown 1px solid;
+}
+
+#cooperativas_indv .text d{
+	color: brown;
+	font-weight: bold;
+}
+
+#cooperativas_indv .text .contact a {
+	color: darkred;
+}
+
+#cooperativas_indv .text .cuadernos .table_cdrn {
+	border-collapse: collapse;
+	width: 100%;
+	max-width: 1180px;
+}
+
+#cooperativas_indv .text .cuadernos .table_cdrn #top_cell {
+	border-top: 1px solid brown;
+}
+
+#cooperativas_indv .text .cuadernos .table_cdrn #left_cell {
+	width: 50px;
+}
+
+#cooperativas_indv .text .cuadernos .table_cdrn #right_cell {
+	width: 100% - 50px;
+	text-align: left;
+	padding-left: 10px;
+}
+
+#cooperativas_indv .text .cuadernos .table_cdrn #right_cell a {
+	text-decoration: none;
+	color: black;
+}
+
+#cooperativas_indv .text .cuadernos .table_cdrn th {
+	border-bottom: 1px solid brown;
+	border-left: 1px solid brown;
+	border-right: 1px solid brown;
+	padding-left: 10px;
+}
+
+#cooperativas_indv .text .cuadernos .table_cdrn tr:hover {
+	background-color: #f5f5f5;
 }
 
 /* ============== CONTACT US ============== */
